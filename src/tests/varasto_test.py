@@ -7,7 +7,7 @@ class TestVarasto(unittest.TestCase):
         self.varasto = Varasto(10)
 
         self.varasto2= Varasto(0, 3)
-        
+
         self.varasto3= Varasto(1, -1)
 
     def test_konstruktori_luo_tyhjan_varaston(self):
@@ -80,9 +80,9 @@ class TestVarasto(unittest.TestCase):
 
     def test_teksti(self):
         varasto4 = Varasto(12, 3)
-
+        
         varasto4.lisaa_varastoon(6)
-
+        # varastossa pitäisi olla tilaa 12 - 3 - 6 eli 3
         self.assertAlmostEqual(str(varasto4), "saldo = 9, vielä tilaa 3")
 
 
