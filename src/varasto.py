@@ -24,7 +24,7 @@ class Varasto:
         if maara < 0:
             return
         if maara <= self.paljonko_mahtuu():
-            self.saldo = 0.0
+            self.saldo = self.saldo + maara
         else:
             self.saldo = self.tilavuus
 
